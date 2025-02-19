@@ -30,35 +30,35 @@ def agregarJugador(equipos):
     Nombre = input('Ingrese el nombre del jugador ')
     equipos[len(equipos)-1][1].append(Nombre)
     equipos[len(equipos)-1][1].append([])
-#    dorsal = input('Ingrese el numero del dorsal del jugador ')
-#    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(dorsal)
-#    edad = 0
-#    while edad <= 0:
-#        try:
-#            edad = int(input('Ingrese el numero del edad del jugador '))
-#        except Exception:
-#            print("inserta una edad valida en numero entero mayor a 0")
-#    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(edad)
-#    pos1 = 0
-#    while pos1 <= 0 or pos1 >=5:
-#        print("""1.Delantero
-#2.Mediocampo
-#3.Defensa
-#4.Portero""")
-#        try:
-#            pos1 = int(input('ingresa un numero de la lista segun la posicion del jugador '))
-#        except Exception:
-#            print('solo ingrese numeros enteros segun las opciones')
-#        match pos1:
-#            case 1:
-#                pos = 'Delantero'
-#            case 2:
-#                pos = 'Mediocampo'
-#            case 3:
-#                pos = 'Defensa'
-#            case 4:
-#                pos = 'Portero'
-#    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(pos)
+    dorsal = input('Ingrese el numero del dorsal del jugador ')
+    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(dorsal)
+    edad = 0
+    while edad <= 0:
+        try:
+            edad = int(input('Ingrese el numero del edad del jugador '))
+        except Exception:
+            print("inserta una edad valida en numero entero mayor a 0")
+    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(edad)
+    pos1 = 0
+    while pos1 <= 0 or pos1 >=5:
+        print("""1.Delantero
+2.Mediocampo
+3.Defensa
+4.Portero""")
+        try:
+            pos1 = int(input('ingresa un numero de la lista segun la posicion del jugador '))
+        except Exception:
+            print('solo ingrese numeros enteros segun las opciones')
+        match pos1:
+            case 1:
+                pos = 'Delantero'
+            case 2:
+                pos = 'Mediocampo'
+            case 3:
+                pos = 'Defensa'
+            case 4:
+                pos = 'Portero'
+    equipos[len(equipos)-1][1][len(equipos[len(equipos)-1][1])-1].append(pos)
     return(equipos)
 def agregarct(equipos):
     #se agrega el nombre del ct y de la misma manera que el jugador se almacenan los datos pero en la lista de ct dentro de la lista del equipo 
